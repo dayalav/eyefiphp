@@ -1,6 +1,8 @@
 # Eyefi PHP JavaScript Library
 This is a PHP Class based on https://github.com/eyefi/eyefi-js to access the Eyefi´s API
 
+# NOTE: This is very much "work in progress"...
+
 # Usage
 ```php
 require_once(dirname(__FILE__) . "/EyeFiClient.php");
