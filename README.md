@@ -6,6 +6,27 @@ This is a PHP Class based on https://github.com/eyefi/eyefi-js to access the Eye
 require_once(dirname(__FILE__) . "/EyeFiClient.php");
 $eyefi = new EyeFiClient(array('access_token' => "YOUR_TOKEN"), 'es');
 ```
+# Objects and Methods
+```php
+$eyefi->GetUserEvents();
+$eyefi->GetUserEvents($eventId);
+$eyefi->GetUserEventsFiles($eventId);
+$eyefi->UpdateUserEvents($eventId, $name);
+$eyefi->GetAlbums();
+$eyefi->GetAlbums($albumId);
+$eyefi->NewAlbum($name);
+$eyefi->UpdateAlbum($albumId, $name, $privacy);
+$eyefi->DeleteAlbum($albumId);
+$eyefi->AddFilestoAlbum($albumId, $files);
+$eyefi->GetFiles();
+$eyefi->GetFiles($fileId);
+$eyefi->NewFile($file);
+$eyefi->DeleteFile($fileId);
+$eyefi->AddFileTag($fileId, $tags);
+$eyefi->GetFileTags($fileId);
+$eyefi->RemoveFileTag($fileId, $tagId);
+$eyefi->SearchFile($favorite, $edited, $raw, $in_trash, $has_geodata, $geo_lat, $geo_lon, $geo_distance, $album_ids, $event_ids, $tag_ids, $camera, $date_from, $date_to, $created_from, $created_to, $page, $per_page, $sort, $order);
+```
 
 # License
 Copyright 2015 David Ayala
